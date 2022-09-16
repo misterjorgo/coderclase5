@@ -7,12 +7,15 @@ let presupuesto2 =
 let presupuesto3 =
   "Casa con jardin, piscina olimpica, jacuzzi, area de juegos, mini campo de golf y estacionamiento para 3 vehiculos";
 
+let budget = prompt("Cual es su presupuesto");
+let nombre = prompt("Cual es tu nombre");
+
 function valorarBudget() {
-  let budget = prompt("Cual es su presupuesto");
-  let nombre = prompt("Cual es tu nombre");
+  budget;
+  nombre;
 
   //   primer else
-  if (budget <= 1000000 && budget > 800000 && budget > 1000000) {
+  if (budget <= 1000000 || budget > 800000 || budget > 1000000) {
     alert(
       `Hola ${nombre} tienes buen presupuesto puedes tener estos beneficios : ${presupuesto3}`
     );
@@ -55,7 +58,7 @@ function valorarBudget() {
     }
 
     //   2 else
-    else if (budget >= 700000 && budget < 799999) {
+    else if (budget >= 700000 || budget < 799999) {
       alert(`Excelente ${nombre} tenemos esta opcion para ti: ${presupuesto2}`);
       confirm = prompt(
         "Se que asi no son las ventas, solo pruebo mi software, pero, le gustaria comprar?, ahora tenemos una promocion si dice ahora mismo que si:), el precio normal $1000000, pero hoy si usted me dice le podemos dar un descuento sorpresa, como ve?, le gustaria comprar?"
@@ -93,7 +96,7 @@ function valorarBudget() {
       }
 
       //   tercer else
-      else if (budget >= 300000 && budget < 699999) {
+      else if (budget >= 300000 || budget < 699999) {
         alert(
           `Perfecto ${nombre} Este es el modelo perfecto para su presupuestp: ${presupuesto1}`
         );
