@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>eventos</title>
+  </head>
+  <body>
+    </div id='bienveida'>Aqui imprimeros tu informacion</div>
+       <form id="formulario" action="">
+        <label > Tu nombre :
+        <input type="text" id="nombre" > </label>
+        <label> Tu fecha de nacimiento: 
+          <input typo="text" id="fecha" maxlength="4"></label>
+        <button type="submit">Enviar</button>
+      </form>
+  <script src="event.js"></script>
+    </body>
+</html>
