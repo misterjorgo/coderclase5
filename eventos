@@ -1,0 +1,9 @@
+const enviar= document.getElementById("enviar");
+enviar.onclick=(e)=>{
+  e.preventDefault();
+  let nombre = document.getElementById("nombre").value;
+  let fecha = document.getElementById("fecha").value;
+  let div = document.getElementById("renderizar");
+  div.innerHTML=`<h3> Hola ${nombre} de verdad naciste este año ${fecha}?</h3>`;
+  console.log(nombre,fecha)
+}
